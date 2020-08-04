@@ -20,6 +20,10 @@ body {
   padding: 0;
 }
 
+.nome{
+  color: white;
+}
+
 a {
   color: inherit;
 } 

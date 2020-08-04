@@ -10,7 +10,7 @@ function Menu(){
             <a href="/">
                 <img className="Logo" src={Logo} alt="Adnflix logo" />
             </a>
-
+            <div className="nome" >Lorena Aparecidinha S2</div>
             <Button as="a" className="ButtonLink" href="/">
                 Novo vídeo
             </Button>

@@ -1,29 +1,29 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
+      "titulo": "Música",
+      "link": "https://www.youtube.com/channel/UCZU9T1ceaOgwfLRq7OKFU4Q",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Link in Park",
+        "url": "https://www.youtube.com/channel/UCZU9T1ceaOgwfLRq7OKFU4Q"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "war of hearts",
+          "url": "https://www.youtube.com/watch?v=GX7f1Btk1yM"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Castle",
+          "url": "https://www.youtube.com/watch?v=Vk0xkd8qs9I"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "Castle of Glass",
+          "url": "https://www.youtube.com/watch?v=ScNNfyq3d_w"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "Can't take my eyes of you",
+          "url": "https://www.youtube.com/watch?v=Q6-tYpWp0Ck"
         },
         {
           "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "titulo": "Back End",
+      "titulo": "Cotidiano",
       "cor": "#00C86F",
       "link_extra": {
         "text": "Cursos de Back End na Alura",
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Mitologia",
       "cor": "#9cd33b",
       "link_extra": {
         "text": "Cursos de Data Science na Alura",
@@ -152,7 +152,7 @@
       ]
     },
     {
-      "titulo": "Aprendendo a aprender tecnologia",
+      "titulo": "Séries",
       "cor": "#6b5be2",
       "link_extra": {
         "text": "Curso sobre aprendizado na Alura",
