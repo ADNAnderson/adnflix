@@ -7,20 +7,24 @@ const Main = styled.main`
     background-color: var(--black);
     color: var(--white);
     flex: 1;
-    padding-top: 50px;
+    padding-top: 94px;
     padding-right: 5%;
     padding-right: 5%;
+    
+    @media (max-width: 800px){
+        padding-top: 40px;
+    }
 `
 
 function PageDefault({ children }){
     return (
-        <div>
+        <>
             <Menu />
                 <Main>
                     {children}
                 </Main>
             <Footer />
-        </div>
+        </>
     );
 }
 
