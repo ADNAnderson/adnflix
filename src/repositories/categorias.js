@@ -6,7 +6,7 @@ function getAllWithVideos() {
   return fetch(`${URL_CATEGORIES}?_embed=videos`)
     .then(async (respostaDoSevidor) => {
       if (respostaDoSevidor.ok) {
-        const resposta = await respostaDoSevidor.json()
+        const resposta = await respostaDoSevidor.json();
         console.log(resposta);
         return resposta;
       }
