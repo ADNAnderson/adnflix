@@ -1,10 +1,16 @@
 /* eslint-disable no-console */
 import config from '../config';
 
-const URL_CATEGORIES = `${config.URL_BACK_TOP}categorias`;
+const URL_VIDEOS = `${config.URL_BACK_TOP}videos`;
 
-function getAllWithVideos() {
-  return fetch(`${URL_CATEGORIES}?_embed=videos`)
+function create(objetoDoVideo) {
+  return fetch(`${URL_VIDEOS}?_embed=videos`, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(objetoDoVideo),
+  })
     .then(async (respostaDoSevidor) => {
       if (respostaDoSevidor.ok) {
         const resposta = await respostaDoSevidor.json();
@@ -17,5 +23,5 @@ function getAllWithVideos() {
 }
 
 export default {
-  getAllWithVideos,
+  create,
 };

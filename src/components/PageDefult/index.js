@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Menu from '../Menu';
 import Footer from '../Footer';
 
@@ -11,18 +11,20 @@ const Main = styled.main`
     padding-top: 94px;
     padding-right: 5%;
     padding-left: 5%;
-    
+    ${({ paddingAll }) => css`
+    padding: ${paddingAll};
+    `} 
     @media (max-width: 800px){
         padding-top: 40px;
     }
 `;
 
 // eslint-disable-next-line react/prop-types
-function PageDefault({ children }) {
+function PageDefault({ children, paddingAll }) {
   return (
     <>
       <Menu />
-      <Main>
+      <Main paddingAll={paddingAll}>
         {children}
       </Main>
       <Footer />

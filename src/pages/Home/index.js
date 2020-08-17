@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { useEffect, useState } from 'react';
 import categoriasRepository from '../../repositories/categorias';
 import PageDefault from '../../components/PageDefult';
@@ -18,24 +19,34 @@ function Home() {
   }, []);
 
   return (
-    <PageDefault>
+    <PageDefault paddingAll={0}>
 
       {dadosIniciais.length === 0 && (<div>Loading...</div>)}
 
-      {dadosIniciais.length >= 1 && (
-        <>
-          <BannerMain
-            videoTitle={dadosIniciais[0].videos[0].titulo}
-            url={dadosIniciais[0].videos[0].url}
-            videoDescription="Descrição"
-          />
+      {dadosIniciais.map((categoria, indice) => {
+        if (indice === 0) {
+          return (
+            <div key={categoria.id}>
+              <BannerMain
+                videoTitle={dadosIniciais[0].videos[0].titulo}
+                url={dadosIniciais[0].videos[0].url}
+                videoDescription={dadosIniciais[0].videos[0].description}
+              />
+              <Carousel
+                ignoreFirstVideo
+                category={dadosIniciais[0]}
+              />
+            </div>
+          );
+        }
 
+        return (
           <Carousel
-            ignoreFirstVideo
-            category={dadosIniciais[0]}
+            key={categoria.id}
+            category={categoria}
           />
-        </>
-      )}
+        );
+      })}
     </PageDefault>
   );
 }
